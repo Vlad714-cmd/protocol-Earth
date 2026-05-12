@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dyplmefj2vlj"]
+
+[ext_resource type="PackedScene" uid="uid://cdywjascyl0ds" path="res://scene/station_room.tscn" id="1_brvut"]
+[ext_resource type="PackedScene" uid="uid://bksmyic8xfmti" path="res://Hud/hud.tscn" id="2_0ha60"]
+[ext_resource type="PackedScene" uid="uid://brmhxcp1bwspc" path="res://Hud/base_manager.tscn" id="3_4j5ol"]
+[ext_resource type="PackedScene" uid="uid://bjhlc0au07t01" path="res://player/player.tscn" id="4_p1hux"]
+
+[node name="Main" type="Node3D" unique_id=863665516]
+
+[node name="StationRoom" parent="." unique_id=856231410 instance=ExtResource("1_brvut")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.725307, 0.40877724, 47.699303)
+
+[node name="HUD" parent="." unique_id=1114740441 instance=ExtResource("2_0ha60")]
+
+[node name="BaseManager" parent="." unique_id=282177858 instance=ExtResource("3_4j5ol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.594208, 16.151247, 6.2433414)
+
+[node name="Player" parent="." unique_id=431630629 instance=ExtResource("4_p1hux")]
+transform = Transform3D(0.16241333, 0, -0.9867228, 0, 1, 0, 0.9867228, 0, 0.16241333, 40.33507, 1.6940243, 46.67596)

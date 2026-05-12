@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://d2bs60oljcvke"]
+
+[node name="ui" type="CanvasLayer" unique_id=145623670]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1653046909]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="MarginContainer" unique_id=1908395922]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Control" unique_id=2019757806]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.5
+offset_top = -29.0
+offset_right = 57.5
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/Control/VBoxContainer" unique_id=581859596]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Protocol: Earth"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="MarginContainer/Control/VBoxContainer" unique_id=619029646]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Exit"

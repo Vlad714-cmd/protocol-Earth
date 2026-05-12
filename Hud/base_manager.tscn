@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://brmhxcp1bwspc"]
+
+[ext_resource type="Script" uid="uid://duk04oenrsums" path="res://scripts/base_manager.gd" id="1_s1yf6"]
+[ext_resource type="PackedScene" uid="uid://bksmyic8xfmti" path="res://Hud/hud.tscn" id="2_6sm2g"]
+
+[node name="BaseManager" type="Node3D" unique_id=282177858]
+script = ExtResource("1_s1yf6")
+
+[node name="HUD" parent="." unique_id=1114740441 instance=ExtResource("2_6sm2g")]
+
+[node name="GameTimer" type="Timer" parent="." unique_id=94874449]
+autostart = true

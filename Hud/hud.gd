@@ -3,13 +3,9 @@ extends CanvasLayer
 # Посилання на бари (перевірте, щоб назви в дереві сцени збігалися!)
 @onready var energy_bar = $MainContainer/UI_Layout/BarsContainer/EnergyBar
 @onready var oxygen_bar = $MainContainer/UI_Layout/BarsContainer/OxygenBar
-@onready var storm_rect = $StormOverlay
+@onready var storm_rect = $MainContainer/StormOverlay
 
 func _ready() -> void:
-	# Рядок з mouse_filter видалено, оскільки CanvasLayer його не підтримує.
-	# Щоб HUD не блокував кліки, налаштуйте Mouse Filter у вузла MainContainer 
-	# або ColorRect в інспекторі на значення "Ignore".
-	
 	# Шукаємо BaseManager у сцені 
 	var manager = get_tree().root.find_child("BaseManager", true, false)
 	
@@ -23,7 +19,7 @@ func _ready() -> void:
 		print("Помилка: BaseManager не знайдено в дереві сцен!") 
 
 # Функція, яку викликає сигнал від BaseManager 
-func update_values(en: float, ox: float):
+func update_values(en: float, ox: float, gt: float):
 	if energy_bar:
 		energy_bar.value = en 
 	if oxygen_bar:

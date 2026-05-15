@@ -89,7 +89,7 @@ _data = {
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1887398539]
-transform = Transform3D(1.3456814, 0, 0, 0, 1.6342067, 0, 0, 0, 1.4433553, 3.8556468, 1.4324961, 0)
+transform = Transform3D(4.305, 0, 0, 0, 4.305, 0, 0, 0, 4.305, 3.8556468, 1.4324961, 0)
 shape = SubResource("CapsuleShape3D_onrkg")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1721873366]
@@ -106,24 +106,6 @@ libraries/ = SubResource("AnimationLibrary_i3pqv")
 
 [node name="Helmet" parent="CanvasLayer" unique_id=105725274 instance=ExtResource("2_rkbax")]
 transform = Transform3D(-0.067771465, 0, -0.99770087, 0, 1, 0, 0.99770087, 0, -0.067771465, 4.191, 2.23, 0)
-
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=934956320]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=976594904]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=1460419441]
-layout_mode = 2
-text = "00:00"
-
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control/VBoxContainer" unique_id=1162248837]
-layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=684141239]
 modulate = Color(1, 1, 1, 0.07058824)

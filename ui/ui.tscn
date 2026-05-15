@@ -1,6 +1,18 @@
 [gd_scene format=3 uid="uid://d2bs60oljcvke"]
 
+[ext_resource type="Script" uid="uid://da34ts2od30hp" path="res://ui/ui.gd" id="1_ks8t7"]
+[ext_resource type="Texture2D" uid="uid://cha0tr6p8iol3" path="res://ui/desert.png" id="1_nb4k0"]
+
 [node name="ui" type="CanvasLayer" unique_id=145623670]
+script = ExtResource("1_ks8t7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=800459626]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nb4k0")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1653046909]
 anchors_preset = 15
@@ -30,11 +42,27 @@ alignment = 1
 [node name="Label" type="Label" parent="MarginContainer/Control/VBoxContainer" unique_id=581859596]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
 text = "Protocol: Earth"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="MarginContainer/Control/VBoxContainer" unique_id=619029646]
+[node name="Play" type="Button" parent="MarginContainer/Control/VBoxContainer" unique_id=1595041753]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Play"
+
+[node name="Settings" type="Button" parent="MarginContainer/Control/VBoxContainer" unique_id=2117985673]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Exit" type="Button" parent="MarginContainer/Control/VBoxContainer" unique_id=619029646]
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_font_sizes/font_size = 26
 text = "Exit"
+
+[connection signal="pressed" from="MarginContainer/Control/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/Control/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/Control/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

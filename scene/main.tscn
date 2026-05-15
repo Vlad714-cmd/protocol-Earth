@@ -12,8 +12,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.725307, 0.40877724, 47.699
 
 [node name="HUD" parent="." unique_id=1114740441 instance=ExtResource("2_0ha60")]
 
-[node name="BaseManager" parent="." unique_id=282177858 instance=ExtResource("3_4j5ol")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.594208, 16.151247, 6.2433414)
+[node name="BaseManager" parent="." unique_id=656845647 instance=ExtResource("3_4j5ol")]
 
 [node name="Player" parent="." unique_id=431630629 instance=ExtResource("4_p1hux")]
-transform = Transform3D(0.16241333, 0, -0.9867228, 0, 1, 0, 0.9867228, 0, 0.16241333, 40.33507, 1.6940243, 46.67596)
+transform = Transform3D(0.16241333, 0, -0.9867228, 0, 1, 0, 0.9867228, 0, 0.16241333, 35.311436, 2.4350183, 47.929317)

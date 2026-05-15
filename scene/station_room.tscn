@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cdywjascyl0ds"]
 
 [ext_resource type="PackedScene" uid="uid://cdu1akqdhwppu" path="res://scene/dune.blend.blend" id="1_382va"]
-[ext_resource type="Script" uid="uid://c0ddxjh0syemg" path="res://scene/generator_terminal.gd" id="2_vnl5x"]
-[ext_resource type="Script" uid="uid://belaffuds1b1s" path="res://scene/oxygen_terminal.gd" id="3_hkufb"]
-[ext_resource type="Script" uid="uid://dteb32xa5dvna" path="res://scene/comms_terminal.gd" id="4_0im5w"]
-[ext_resource type="Script" uid="uid://brccngdsaox6f" path="res://scene/hull_terminal.gd" id="5_w50bg"]
+[ext_resource type="Script" uid="uid://c0ddxjh0syemg" path="res://scripts/generator_terminal.gd" id="2_vnl5x"]
+[ext_resource type="Script" uid="uid://belaffuds1b1s" path="res://scripts/oxygen_terminal.gd" id="3_hkufb"]
+[ext_resource type="Script" uid="uid://dteb32xa5dvna" path="res://scripts/comms_terminal.gd" id="4_0im5w"]
+[ext_resource type="Script" uid="uid://brccngdsaox6f" path="res://scripts/hull_terminal.gd" id="5_w50bg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6r3k"]
 albedo_color = Color(0.24840033, 0.24840012, 0.24840012, 1)
@@ -377,7 +377,7 @@ shape = SubResource("BoxShape3D_w50bg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26609135, 0)
 mesh = SubResource("BoxMesh_n5n22")
 
-[node name="Timer" type="Timer" parent="zone/Control panel" unique_id=718532701]
+[node name="GameTimer" type="Timer" parent="zone/Control panel/CommsTerminal" unique_id=718532701]
 wait_time = 30.0
 
 [node name="HullTerminal" type="Node3D" parent="zone" unique_id=1190379606]
